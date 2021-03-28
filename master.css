@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-image: url(ball.gif);
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: NBA Kings;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  color: white;
+  font-weight: bolder;
+  font-stretch: expanded;
+}
+
+#n {
+  color: blue;
+}
+
+#a {
+  color: red;
+}
+
+.boxContainer {
+  display: grid;
+  grid-column-gap: auto;
+  grid-template-columns: 30% 30% 30%;
+  background-color: #2196F3;
+  padding: 10px;
+  color: yellow;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: auto 75%;
+  margin: auto 30%;
+  height: 1000px;
+  border: 1px solid white;
+  border-radius: 10%;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 7px;
+  width: 75%;
+  background-image: url(logo.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-style: preserve-3d;
+  transition: all .4s linear;
+  border-radius: 10%;
+}
+
+.flip {
+  transform: rotateY(360deg);
+  transform-style: preserve-3d;
+  transition: all .4s linear;
+  /* background-image: url('logo.gif'); */
+}
